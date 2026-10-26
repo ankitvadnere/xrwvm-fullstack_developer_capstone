@@ -50,19 +50,19 @@ export default function Register() {
       <p className="text-muted mb-4">Join Cars Dealership to share and read dealership reviews.</p>
       <form onSubmit={handleSubmit} className="card card-body shadow-sm">
         <label className="form-label" htmlFor="userName">Username</label>
-        <input className="form-control mb-3" id="userName" name="userName" value={form.userName} onChange={handleChange} autoComplete="username" required />
+        <input className="form-control mb-3" id="userName" name="userName" value={form.userName} onChange={handleChange} autoComplete="username" placeholder="Username" required />
 
         <label className="form-label" htmlFor="firstName">First Name</label>
-        <input className="form-control mb-3" id="firstName" name="firstName" value={form.firstName} onChange={handleChange} autoComplete="given-name" required />
+        <input className="form-control mb-3" id="firstName" name="firstName" value={form.firstName} onChange={handleChange} autoComplete="given-name" placeholder="First Name" required />
 
         <label className="form-label" htmlFor="lastName">Last Name</label>
-        <input className="form-control mb-3" id="lastName" name="lastName" value={form.lastName} onChange={handleChange} autoComplete="family-name" required />
+        <input className="form-control mb-3" id="lastName" name="lastName" value={form.lastName} onChange={handleChange} autoComplete="family-name" placeholder="Last Name" required />
 
         <label className="form-label" htmlFor="email">Email</label>
-        <input className="form-control mb-3" id="email" name="email" type="email" value={form.email} onChange={handleChange} autoComplete="email" required />
+        <input className="form-control mb-3" id="email" name="email" type="email" value={form.email} onChange={handleChange} autoComplete="email" placeholder="Email" required />
 
         <label className="form-label" htmlFor="password">Password</label>
-        <input className="form-control mb-4" id="password" name="password" type="password" value={form.password} onChange={handleChange} autoComplete="new-password" minLength={8} required />
+        <input className="form-control mb-4" id="password" name="password" type="password" value={form.password} onChange={handleChange} autoComplete="new-password" minLength={8} placeholder="Password" required />
 
         <button className="btn btn-primary" type="submit" disabled={busy}>{busy ? "Registering…" : "Register"}</button>
         {message && <p className="mt-3 mb-0" role="status">{message}</p>}
