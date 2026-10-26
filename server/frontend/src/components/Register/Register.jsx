@@ -59,7 +59,7 @@ export default function Register() {
         <input className="form-control mb-3" id="lastName" name="lastName" value={form.lastName} onChange={handleChange} autoComplete="family-name" placeholder="Last Name" required />
 
         <label className="form-label" htmlFor="email">Email</label>
-        <input className="form-control mb-3" id="email" name="email" type="email" value={form.email} onChange={handleChange} autoComplete="email" placeholder="Email" required />
+        <input className="form-control mb-3" id="email" name="email" type="email" value={form.email} onChange={handleChange} autoComplete="email" placeholder="email" required />
 
         <label className="form-label" htmlFor="password">Password</label>
         <input className="form-control mb-4" id="password" name="password" type="password" value={form.password} onChange={handleChange} autoComplete="new-password" minLength={8} placeholder="Password" required />
