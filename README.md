@@ -1,4 +1,5 @@
-Repository: Coursera-2
+Repository: xrwvm-fullstack_developer_capstone
+
 # Cars Dealership — Full-Stack Capstone
 
 A full-stack dealership locator and review platform for the Coursera capstone. Customers can browse dealership branches, filter by state, view details, and read or submit reviews with sentiment labels.
